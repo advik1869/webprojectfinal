@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	height: 400vh;
+}
+header{
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+.box{
+	position: relative;
+	margin: 80px 20px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+}
+.box1{
+	background: crimson;
+	z-index: 1;
+}
+
+.box2{
+	background: teal;
+	z-index: 2;
+}
+
+.box3{
+	background: purple;
+	z-index: 3;
+}
+
+.box4{
+	background: orange;
+	z-index: 50;
+}

@@ -1,0 +1,40 @@
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	width: 50%;
+	box-shadow: 5px 5px 5px ;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(135deg,#185a9d,#43cea2);
+}
+.container input{
+	margin-bottom: 20px;
+	border-radius: 8px;
+	padding: 10px;
+	width: 45%;
+}
+.container button{
+	margin-top: 10px;
+	border-radius: 8px;
+	padding: 10px;
+	width: 30%;
+	background: linear-gradient(135deg, #d4fc79, #96e6a1);
+	box-shadow: 2px 3px 5px;
+}
+.container button:hover{
+	cursor: pointer;
+}
+#message{
+	font-size: 30px;
+}

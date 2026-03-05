@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style>
+		.header{
+			text-align: center;
+			padding: 20px;
+			font-size: 30px;
+		}
+		.maingallery{
+			display: grid;
+			grid-template-columns: repeat(3,200px);
+			grid-template-rows: repeat(2,200px);
+			gap: 20px;
+			padding: 20px;
+			justify-content: center;
+		}
+		.galleryitem{
+			width: 200px;
+			height: 200px;
+			border: 3px solid gold;
+			text-align: center;
+			align-content: center;
+		}
+		.galleryitem:hover{
+			background-color: lightpink;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body style="background-color: powderblue;">
+	<div class="header">
+		GALLERY
+	</div>
+	<div class="maingallery">
+		<div class="galleryitem">image 1 </div>
+		<div class="galleryitem">image 2 </div>
+		<div class="galleryitem">image 3</div>
+		<div class="galleryitem">image 4</div>
+		<div class="galleryitem">image 5</div>
+		<div class="galleryitem">image 6</div>
+
+	</div>
+	<div class="footer" style="text-align: center;font-size: 20px;">
+		<a href="#">home</a>
+	</div>
+</body>
+</html>

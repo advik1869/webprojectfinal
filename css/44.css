@@ -1,0 +1,27 @@
+.gallery{
+	position: relative;
+	margin: auto;
+
+}
+.gallery img{
+	position: absolute;
+	height: 350px;
+	width: 625px;
+	cursor: pointer;
+}
+.img1{
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.img2{
+	top: 40px;
+	left: 40px;
+	z-index: 2;
+}
+
+.img3{
+	top: 80px;
+	left: 80px;
+	z-index: 3;
+}

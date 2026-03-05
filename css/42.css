@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 599px;
+}
+img{
+    position: relative;
+    z-index: 1;
+    height:60vh;
+    width: 100%;
+}
+.caption{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align:center;
+}

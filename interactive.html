@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<button id="topBtn" onclick="goTop()">↑</button>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Web Project</a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <!-- LEFT SIDE -->
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Tasks
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="features.html">HTML & CSS</a></li>
+            <li><a class="dropdown-item" href="interactive.html">JavaScript</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <!-- RIGHT SIDE -->
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!--26-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    You are creating a webpage with a paragraph and a button.
+    When the user clicks the button, the text inside the paragraph should change to “Welcome to JavaScript!”.<br><br><br>
+    Write JavaScript code using <code>innerHTML</code> to update the paragraph content when the button is clicked.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/26.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/26.html','code26', this)">
+    Show Code
+</button>
+<pre id="code26" class="code-box"></pre>
+</section>
+
+
+<!--27-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    A webpage has a text input field and a “Submit” button.<br>
+    When the user enters their name and clicks the button, the page should display: <br>
+    Hello "name", Welcome
+    Use innerHTML to display the message inside a  <code>&lt;div&gt;</code>element.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/27.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+ <button class="code-btn mt-3"
+        onclick="loadCode('html/27.html','code27', this)">
+    Show Code
+</button>
+<pre id="code27" class="code-box"></pre>
+
+</section>
+
+<!--28-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Write a JavaScript function called <code>calculateTotal</code> that takes price and quantity as parameters and returns the total cost.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/28.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/28.html','code28', this)">
+    Show Code
+</button>
+<pre id="code28" class="code-box"></pre>
+</section>
+
+<!--29-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a webpage with a button labeled “Show Message”.<br>
+    When the user clicks the button, a message “Welcome to JavaScript!” should appear inside a <code>&lt;div&gt;</code> element.<br>
+    How will you use JavaScript innerHTML to display the message inside the <code>&lt;div&gt;</code>when the button is clicked?
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/29.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+ <button class="code-btn mt-3"
+        onclick="loadCode('html/29.html','code29', this)">
+    Show Code
+</button>
+<pre id="code29" class="code-box"></pre>
+</section>
+
+
+<!--30-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question</strong><br>
+    A webpage initially shows the text “Status: Offline” in gray color inside a paragraph.<br>
+    When the user clicks a “Go Online” button, the text should change to “Status: Online” in green color. 
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/30.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/30.html','code30', this)">
+    Show Code
+</button>
+<pre id="code30" class="code-box"></pre>
+</section>
+
+<!--31-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+      A university registration page collects a student’s name, email, password, confirm password, and age.<br>
+      Using JavaScript, validate the form so that all fields are required, the email should not empty, the password is at least 8 characters long, the confirm password matches the password, and the age is a number greater than or equal to 18 before allowing
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/31.html"
+      width="100%"
+      height="750"
+      style="border:none;">
+    </iframe>
+    
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/31.html','code31', this)">
+    Show Code
+</button>
+<pre id="code31" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/31.css','code31css', this)">
+  Show CSS Code
+</button>
+<pre id="code31css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/31.js','code31js', this)">
+  Show JS Code
+</button>
+<pre id="code31js" class="code-box"></pre>
+</section>
+
+<!--32-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    An online shopping website has a checkout form with fields for full name, phone number, delivery address, ZIP/postal code, and payment option.<br>
+    Write JavaScript validation to ensure the phone number contains exactly 10 digits, the ZIP/postal code matches the required format, and a payment option is selected before the form is submitted.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/32.html"
+      width="100%"
+      height="800"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/32.html','code32', this)">
+    Show Code
+</button>
+<pre id="code32" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/32.css','code32css', this)">
+  Show CSS Code
+</button>
+<pre id="code32css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/32.js','code32js', this)">
+  Show JS Code
+</button>
+<pre id="code32js" class="code-box"></pre>
+</section>
+
+
+<!--33-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    A VTOP dashboard requires user authentication. Design a login screen that collects the username, password, and user type for login. <br><br><br>
+    Use JavaScript form validation to verify the inputs. If the login is successful, redirect to the dashboard and display <b>“Welcome &lt;username&gt;”</b>. If the login details are invalid, display appropriate error messages below the respective input fields.
+  </div>
+  <div class="card shadow p-4">
+    Note:<br> username:advik<br>pass:advik123
+    <iframe
+      src="html/33.html"
+      width="100%"
+      height="600"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/33.html','code33', this)">
+    Show Code
+</button>
+<pre id="code33" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/33.css','code33css', this)">
+  Show CSS Code
+</button>
+<pre id="code33css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/33.js','code33js', this)">
+  Show JS Code
+</button>
+<pre id="code33js" class="code-box"></pre>
+</section>
+
+
+<!--34-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    An online examination registration form includes fields for student name, email, gender (radio buttons), subjects interested (checkboxes), and a declaration checkbox. Using JavaScript form validation, ensure that the name and email are not empty, one gender option is selected, at least one subject checkbox is checked, and the declaration checkbox is selected before allowing the form to be submitted.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/34.html"
+      width="100%"
+      height="850"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/34.html','code34', this)">
+    Show Code
+</button>
+<pre id="code34" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/34.css','code34css', this)">
+  Show CSS Code
+</button>
+<pre id="code34css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/34.js','code34js', this)">
+  Show JS Code
+</button>
+<pre id="code34js" class="code-box"></pre>
+</section>
+
+
+<!--35-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    A hotel booking form collects guest name, contact number, room type (radio buttons), additional services (checkboxes such as breakfast, airport pickup, and Wi-Fi), and a terms and conditions checkbox. Write JavaScript validation to verify that the guest name and contact number are entered, one room type is selected, at least one additional service is chosen, and the terms and conditions checkbox is checked before submission.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/35.html"
+      width="100%"
+      height="750"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/35.html','code35', this)">
+    Show Code
+</button>
+<pre id="code35" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/35.css','code35css', this)">
+  Show CSS Code
+</button>
+<pre id="code35css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/35.js','code35js', this)">
+  Show JS Code
+</button>
+<pre id="code35js" class="code-box"></pre>
+</section>
+
+
+<!--36-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a simple registration form with three input fields: username, email, and password. <br><br>
+    When the user clicks the "Submit" button, use JavaScript's <code>focus()</code> method to check each field sequentially, if the username is empty, focus on it; otherwise, check the email, and so on for the password. <b>This improves user experience by directing attention to the first invalid field.</b>
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/36.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/36.html','code36', this)">
+    Show Code
+</button>
+<pre id="code36" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/36.css','code36css', this)">
+  Show CSS Code
+</button>
+<pre id="code36css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/36.js','code36js', this)">
+  Show JS Code
+</button>
+<pre id="code36js" class="code-box"></pre>
+</section>
+
+
+<!--37-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Build a login form with username and password fields. Use the <code>focus()</code> method in an <code>input</code> event listener: when the user finishes typing in the username (e.g., presses Enter or the field loses focus with content), automatically focus the password field. Add visual feedback like highlighting the focused field.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/37.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/37.html','code37', this)">
+    Show Code
+</button>
+<pre id="code37" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/37.css','code37css', this)">
+  Show CSS Code
+</button>
+<pre id="code37css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/37.js','code37js', this)">
+  Show JS Code
+</button>
+<pre id="code37js" class="code-box"></pre>
+</section>
+
+
+<!--38-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a webpage with an image of a product. Use <code>mouseover</code> and <code>mouseout</code> event listeners on the image: on <code>mouseover</code>, display a tooltip div next to the cursor with product details (e.g., price, description), and hide it on <code>mouseout</code>. Update the tooltip position using mousemove with <code>event.clientX</code> and <code>event.clientY</code> for smooth following.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/38.html"
+      width="100%"
+      height="1000"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/38.html','code38', this)">
+    Show Code
+</button>
+<pre id="code38" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/38.css','code38css', this)">
+  Show CSS Code
+</button>
+<pre id="code38css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/38.js','code38js', this)">
+  Show JS Code
+</button>
+<pre id="code38js" class="code-box"></pre>
+</section>
+
+<!--39-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    <b>Live Form Validation</b><br><br>
+    Develop a registration form with email and password inputs. Use <code>input</code> event listeners on each field to validate in real-time: for email, check format show green/red icons; for password, enforce strength rules (length, characters) and update a error text. Clear errors on valid input and prevent form submission if invalid.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/39.html"
+      width="100%"
+      height="650"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/39.html','code39', this)">
+    Show Code
+</button>
+<pre id="code39" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/39.css','code39css', this)">
+  Show CSS Code
+</button>
+<pre id="code39css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/39.js','code39js', this)">
+  Show JS Code
+</button>
+<pre id="code39js" class="code-box"></pre>
+</section>
+
+
+<!--40-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a webpage with multiple cards(login, signup, confirmation) that can open simultaneously.<br><br>
+    Use JavaScript to dynamically set <code>z-index</code> values: base modals at 1000, nested at 1001+, backgrounds at 999.<br><br>
+    On <code>click</code> outside modal content, close by reducing <code>z-index</code> to -1 and fading opacity. 
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/40.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+
+  </div>
+  <button class="code-btn mt-3"
+        onclick="loadCode('html/40.html','code40', this)">
+    Show Code
+</button>
+<pre id="code40" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/40.css','code40css', this)">
+  Show CSS Code
+</button>
+<pre id="code40css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/40.js','code40js', this)">
+  Show JS Code
+</button>
+<pre id="code40js" class="code-box"></pre>
+</section>
+
+
+  <!--41-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Build a product card with hover tooltip. Style card with <code>position: relative; z-index: 10</code> and tooltip <code>position: absolute; z-index: 20</code>. <br><br>
+    Add JS event listener: on mouseenter, set <code>tooltip.style.zIndex = 999</code> and <code>display: block;</code> on <code>mouseleave</code>, hide it. <br><br>
+    Place multiple overlapping cards to demonstrate why high z-index prevents tooltip hiding behind others.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/41.html"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/41.html','code41', this)">
+    Show Code
+</button>
+<pre id="code41" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/41.css','code41css', this)">
+  Show CSS Code
+</button>
+<pre id="code40css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/41.js','code41js', this)">
+  Show JS Code
+</button>
+<pre id="code41js" class="code-box"></pre>
+</section>
+
+
+<!--44-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+     Build a simple gallery with 3 overlapping images (position: absolute, z-index: 1, 2, 3). Add click listeners to each image: when clicked, use JavaScript to set <code>style.zIndex = 10</code> on the clicked image (bringing it to front) and reset others to their original z-index values (1, 2, 3). Use <code>querySelectorAll('img')</code> loop to manage stacking.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/44.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3 mb-3"
+        onclick="loadCode('html/44.html','code44', this)">
+    Show Code
+</button>
+<pre id="code44" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/44.css','code44css', this)">
+  Show CSS Code
+</button>
+<pre id="code44css" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('js/44.js','code44js', this)">
+  Show JS Code
+</button>
+<pre id="code44js" class="code-box"></pre>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

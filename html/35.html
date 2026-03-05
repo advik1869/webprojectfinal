@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Booking</title>
+
+<link rel="stylesheet" href="../css/35.css">
+<script src="../js/35.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>HOTEL BOOKING</h2>
+
+<input type="text" id="name" placeholder="Name">
+<div id="nameerror" class="error"></div>
+
+<input type="tel" id="contact" placeholder="Contact Number">
+<div id="contacterror" class="error"></div>
+
+<div class="section">
+<label>Room Type:</label>
+
+<div class="options">
+<label><input type="radio" name="room"> AC</label>
+<label><input type="radio" name="room"> Non-AC</label>
+</div>
+
+<div id="roomerror" class="error"></div>
+</div>
+
+<div class="section">
+<label>Additional Services:</label>
+
+<div class="options">
+<label><input type="checkbox" name="service"> Breakfast</label>
+<label><input type="checkbox" name="service"> Airport Pickup</label>
+<label><input type="checkbox" name="service"> WiFi</label>
+</div>
+
+<div id="serviceerror" class="error"></div>
+</div>
+
+<div class="terms">
+<label>
+<input type="checkbox" id="terms">
+I agree to <a href="#">Terms & Conditions</a>
+</label>
+
+<div id="termserror" class="error"></div>
+</div>
+
+<div id="res"></div>
+
+<button onclick="return validate()">Submit</button>
+
+</div>
+
+</body>
+</html>

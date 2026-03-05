@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DASHBOARD</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		table{
+			border: solid black;
+			border-collapse: collapse;
+		}
+		th,td{
+			padding:12px;
+			border: solid black;
+			text-align: center;
+		}
+		td{
+			background-color: darkslateblue;
+		}
+		.navigation{
+			width: 100%;
+		}
+		a{
+			color: white;
+		}
+		a:hover{
+			background-color: powderblue  ;
+		}
+		.container{
+			display: flex;
+		}
+		.sidebar{
+			width: 20%;
+			height: 100vh;
+			background-color: grey;
+		}
+		.sidebar ul{
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+		}
+		.sidebar li{
+			padding: 12px;
+			 background-color: lightgrey;
+			 border:1px solid black;
+			 margin-bottom: 10px;
+		}
+		.sidebar li:hover{
+			background-color: white;
+			cursor: pointer;
+		}
+		.main{
+			width: 80%;
+			height: 100vh;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<table class="navigation">
+		<tr>
+			<td><a href="">Home</a></td>
+			<td><a href="">Report</a></td>
+			<td><a href="">Settings</a></td>
+			<td><a href="">Logout</a></td>
+		</tr>
+	</table>
+	<div class=" container">
+		<div class=" sidebar">
+			<ul>
+				<li>Overview</li>
+				<li>Sales</li>
+				<li>Users</li>
+				<li>Support</li>
+			</ul>
+		</div>
+		<div class="main">
+			<h2>Dashboard content</h2>
+		</div>
+	</div>
+</body>
+</html>

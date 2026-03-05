@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html and CSS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<button id="topBtn" onclick="goTop()">↑</button>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Web Project</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Tasks
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="features.html">HTML & CSS</a></li>
+            <li><a class="dropdown-item" href="interactive.html">JavaScript</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+     
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!--1-->
+<section class="container my-5">
+  <div class="alert alert-info"> 
+     <strong>Question:</strong><br>
+    Create a simple HTML webpage with a proper basic structure .
+    Add a title for the webpage and display a welcome message inside the body.
+    Format the message using bold and italic text.
+  </div>
+  <div class="card shadow p-4 text-center">
+
+    <iframe
+      src="html/1.html"
+      width="100%"
+      height="300"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="btn btn-dark  code-btn mt-3"
+       onclick="loadCode('html/1.html','code1', this)">
+      Show Code
+  </button>
+
+<pre id="code1" class="code-box"></pre>
+</section>
+
+<!--2-->
+<section class="container my-5">
+  <div class="alert alert-info">
+      <strong>Question :</strong><br>
+      Create a basic HTML structure with some text according to any theme.
+      Use bold, italic and underlined formatting.
+      Use at least 10 sentences.
+    </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/2.html"
+      width="100%"
+      height="600"
+      style="border:none;">
+    </iframe>
+   
+  </div>
+ <button class="code-btn mt-3"
+        onclick="loadCode('html/2.html','code2', this)">
+    Show Code
+    </button>
+<pre id="code2" class="code-box"></pre>
+</section>
+
+<!--3-->
+<section class="container my-5">
+  <!-- QUESTION -->
+<div class="alert alert-info">
+  <strong>Question :</strong><br>
+  Create a simple web page using the <code>&lt;div&gt;</code> tag that contains four sections:
+  a header, a navigation bar, a main content area, and a footer.<br>
+  Ensure that each section is clearly separated and labeled with appropriate text.
+</div>
+  <div class="card shadow p-4">
+    <iframe
+      src="html/3.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/3.html','code3', this)">
+    Show Code
+    </button>
+<pre id="code3" class="code-box"></pre>
+</section>
+
+<!--4,5,6,7-->
+
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question :</strong><br>
+    a)Create the home layout with div tag, add some text and images according to your theme.<br>
+    b)Design a homepage main content area with three stacked <code>&lt;div&gt;</code> sections (each 200px height, different background colors) labeled "Services", "Portfolio", and "Testimonials".<br>
+    c)Create an "About" page using <code>&lt;div&gt;</code> tags for these sections: header (company name), hero section (with profile image placeholder and bio paragraph), 
+    features area (three side-by-side <code>&lt;div&gt;</code>s for "Experience", "Skills", "Mission" with icons/text), and footer (contact info). <br>
+    d)Create a "Contact Us" page using <code>&lt;div&gt;</code> tags structured as: header, contact info section (three stacked <code>&lt;div&gt;</code>s for address, phone, email with icons) and also place the map image of the location and footer. 
+    Use multiple div tags for proper arrangements of all elements
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/4.html"
+      width="100%"
+      height="650"
+      style="border:none;">
+    </iframe>
+
+  </div>
+    <!-- MAIN PAGE -->
+<button class="btn btn-dark  code-btn mt-3"
+        onclick="loadCode('html/4.html','code4main', this)">
+  Show "Main" Page Code
+</button>
+<pre id="code4main" class="code-box"></pre>
+
+<!-- HOME PAGE -->
+<button class="btn btn-secondary  code-btn mt-3"
+        onclick="loadCode('html/4home.html','code4home', this)">
+  Show "Home" Page Code
+</button>
+<pre id="code4home" class="code-box"></pre>
+
+<!-- ABOUT PAGE -->
+<button class="btn btn-secondary  code-btn mt-3"
+        onclick="loadCode('html/4about.html','code4about', this)">
+  Show "About" Page Code
+</button>
+<pre id="code4about" class="code-box"></pre>
+
+<!-- CONTACT PAGE -->
+<button class="btn btn-secondary  code-btn mt-3"
+        onclick="loadCode('html/4contact.html','code4contact', this)">
+  Show "Contact" Page Code
+</button>
+<pre id="code4contact" class="code-box"></pre>
+</section>
+
+
+<!--8-->
+<section class="container my-5">
+
+   <div class=" alert alert-info">
+    <strong>Question :</strong><br>
+    Create a "Gallery" page using <code>&lt;div&gt;</code>tags structured as: header, main gallery container (with 6 image placeholders in 2x3 layout, each 200x200px div with border and hover effect), and footer. 
+    Use placeholder text like "Image 1" inside each gallery.
+  </div>
+  <div class="card shadow p-4">
+    <iframe
+      src="html/8.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/8.html','code8', this)">
+    Show Code
+    </button>
+<pre id="code8" class="code-box"></pre>
+</section>
+<!--9-->
+
+<section class="container my-5">
+  <!-- QUESTION -->
+<div class="alert alert-info">
+  <strong>Question:</strong><br>
+  Create an HTML page for a restaurant menu that uses:<br>
+  •An unordered list for menu categories (Starters, Main Course, Desserts).<br>
+  •An ordered list (numbered) under “Main Course” to show top 5 best-selling dishes.
+</div>
+
+  <div class="card shadow p-4">
+    <iframe
+      src="html/9.html"
+      width="100%"
+      height="700"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/9.html','code9', this)">
+    Show Code
+    </button>
+<pre id="code9" class="code-box"></pre>
+
+</section>
+
+
+<!--10-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create an HTML page for a “Web Technologies Course Outline” that contains:<br>
+    •An ordered list for the sequence of modules (HTML, CSS, Bootstrap, JavaScript, PHP etc.).<br>
+    •For the HTML module, an unordered sub-list showing topics (elements, attributes, lists, tables).<br>
+    •A description list at the bottom defining three terms: ordered list, unordered list, and description list.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/10.html"
+      width="100%"
+      height="750"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/10.html','code10', this)">
+    Show Code
+    </button>
+<pre id="code10" class="code-box"></pre>
+</section>
+<!--11-->
+
+<section class="container my-5">
+   <!-- QUESTION -->
+<!-- QUESTION -->
+<div class="alert alert-info">
+  <strong>Question:</strong><br>
+  Create an HTML page for a college restaurant menu using a table with 5 columns (Dish Name, Image, Price, qty available, offers).<br><br>
+
+  Use an unordered list inside the first table cell to show dish categories (Appetizers, Main Course) and embed thumbnail images 
+  (<code>&lt;img src="appetizer1.jpg" width="100" height="100"&gt;</code>) in table cells for 8 dishes.
+</div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/11.html"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+ <button class="code-btn mt-3"
+        onclick="loadCode('html/11.html','code11', this)">
+    Show Code
+    </button>
+<pre id="code11" class="code-box"></pre>
+</section>
+
+
+<!--12-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design an HTML student leaderboard page with an ordered table (1st, 2nd, 3rd places) showing Rank, Student Name, Score, and Photo column with medal images. Nest an unordered sub-list under each row for their top subjects, using <code>&lt;img&gt;</code> tags for student photos and medals.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/12.html"
+      width="100%"
+      height="750"
+      style="border:none;">
+    </iframe>
+
+  </div>
+ <button class="code-btn mt-3"
+        onclick="loadCode('html/12.html','code12', this)">
+    Show Code
+    </button>
+<pre id="code12" class="code-box"></pre>
+</section>
+
+
+<!--13-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a “Student Profiles” web page that displays student details in a table with images using HTML and CSS.<br>
+    •The table should have columns: Photo, Name, Roll No, Department, and Email.<br>
+    •Insert a small profile photo for each student inside the “Photo” column using the <code>&lt;img&gt;</code> tag.<br>
+    •Use CSS to add borders, padding, zebra-striping for rows, and hover effect to highlight a row when the mouse moves over it
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/13.html"
+      width="100%"
+      height="800"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/13.html','code13', this)">
+    Show Code
+    </button>
+<pre id="code13" class="code-box"></pre>
+</section>
+
+
+<!--14-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Create a “Product Catalog” web page that uses an HTML table to display at least four products, each with:<br>
+    •A product image inside a table cell using the <img> tag.<br>
+    •Columns for Product Name, Price, and a short Description.<br>
+    •CSS to add borders, padding, alternate row colors, and a hover effect that slightly changes the background color of the row when the mouse moves over it.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/14.html"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/14.html','code14', this)">
+    Show Code
+    </button>
+<pre id="code14" class="code-box"></pre>
+</section>
+
+
+<!--15-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a simple dashboard page where:<br>
+    •The top navigation bar is built using a table row containing links (Home, Reports, Settings, Logout).<br>
+    •A vertical sidebar navigation on the left is created using a list inside a <code>&lt;div&gt;</code>(Overview, Sales, Users, Support).<br>
+    •Use CSS to style both navigations differently (background colors, padding, and hover effects), clearly showing the role of <code>&lt;div&gt;</code>, tables, and lists in layout.
+  </div>
+  <div class="card shadow p-4">
+    <iframe
+      src="html/15.html"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/15.html','code15', this)">
+    Show Code
+    </button>
+<pre id="code15" class="code-box"></pre>
+</section>
+
+
+<!--16-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question: </strong><br>
+    Create a web page with a <code>.conainer</code> div that has a maximum width of 1200px, centered horizontally on the page, with some padding inside. Place a heading and two paragraphs inside the container to demonstrate the layout.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/16.html"
+      width="100%"
+      height="650"
+      style="border:none;">
+    </iframe>
+    
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/16.html','code16', this)">
+    Show Code
+    </button>
+<pre id="code16" class="code-box"></pre>
+</section>
+
+
+<!--17-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a simple webpage where the <code>.conainer</code>  class is used to wrap three content boxes. Each box should be displayed side by side using a flexbox container for product image, with equal width, some gap between them, and the whole layout centered within the page container.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/17.html"
+      width="100%"
+      height="600"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/17.html','code17', this)">
+    Show Code
+    </button>
+<pre id="code17" class="code-box"></pre>
+</section>
+
+
+<!--18-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    Design a login form using HTML and CSS that contains fields for username and password, a “Remember me” checkbox, and a “Login” button. Apply CSS to center the form on the page, add padding, rounded corners, and a hover effect for the button.<br><br>
+    Create a registration form in HTML with fields for full name, email, password, confirm password, and gender (using radio buttons), along with a “Register” button. Use CSS to style the form with proper spacing, borders for inputs, focus effects on form fields, and different background colors for the form header and body.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/18.html"
+      width="100%"
+      height="550"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/18.html','code18', this)">
+    Show "Login" Page Code
+</button>
+<pre id="code18" class="code-box"></pre>
+
+
+<button class="code-btn mt-3"
+        onclick="loadCode('register.html','code18register', this)">
+    Show "Register" Page Code
+</button>
+<pre id="code18register" class="code-box"></pre>
+</section>
+
+
+<!--19-->
+
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a course details web page for a college using HTML and an external CSS file. The page should display course title, code, description, duration, eligibility, syllabus (as a list of modules), and fee structure. <br><br>
+    *Use the external CSS to style the layout with a fixed-width centered container, different background colors for header and footer, styled tables or cards for syllabus and fees, and hover effects for navigation links.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/19.html"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/19.html','code19html', this)">
+  Show HTML Code
+</button>
+<pre id="code19html" class="code-box"></pre>
+
+
+<button class="code-btn mt-3"
+        onclick="loadCode('css/19.css','code19css', this)">
+  Show CSS Code
+</button>
+<pre id="code19css" class="code-box"></pre>
+</section>
+
+
+<!--20-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a product page for an online store using HTML and an external CSS file. The page should display at least one product with an image, product name, price, short description, “Add to Cart” button, and a customer rating section (using stars or icons). <br><br>
+    *Use the external CSS to style the layout (e.g., card-style product box), control fonts and colors, add hover effects on the button, and ensure the page looks neat and well-aligned.
+  </div>
+  <div class="card shadow p-4">
+    <iframe
+      src="html/20.html"
+      width="100%"
+      height="1200"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/20.html','code20', this)">
+    Show Code
+</button>
+<pre id="code20" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/20.css','code20css', this)">
+  Show CSS Code
+</button>
+<pre id="code20css" class="code-box"></pre>
+</section>
+
+
+<!--21-->
+<section class="container my-5">
+  <div class="alert alert-info"> 
+    <strong>Question:</strong><br>
+    Create a responsive contact form using HTML and an external CSS file (linked via <code>&lt;link&gt;</code> tag) that includes fields for name, email, subject, message (textarea), and a submit button. Style the form with a clean design featuring a card-like container with shadow effects.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/21.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/21.html','code21', this)">
+    Show Code
+</button>
+<pre id="code21" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/21.css','code21css', this)">
+  Show CSS Code
+</button>
+<pre id="code21css" class="code-box"></pre>
+</section>
+
+
+<!--22-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Develop and host a simple personal portfolio website using GitHub Pages by creating a GitHub repository, uploading your HTML/CSS files, enabling GitHub Pages, and submitting the live site URL as your answer.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="https://advik1869.github.io/Myself/"
+      width="100%"
+      height="900"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/portfolio.html','codeportfolio', this)">
+    Show Code
+</button>
+<pre id="codeportfolio" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/portfolio.css','codeportfoliocss', this)">
+  Show CSS Code
+</button>
+<pre id="codeportfoliocss" class="code-box"></pre>
+</section>
+
+
+<!--23-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Develop a login form using HTML and CSS that features username/email field, password field with "Forgot Password?" link, and a login button.<br><br>
+    Implement CSS styling with gradient background, box-shadow on form container, input focus glow effects, and button hover transitions.
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/23.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/23.html','code23', this)">
+    Show Code
+</button>
+<pre id="code23" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/23.css','code23css', this)">
+  Show CSS Code
+</button>
+<pre id="code23css" class="code-box"></pre>
+</section>
+
+
+<!--24-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a <b>registration form</b> in HTML with fields for first name, last name, email, phone number, password, confirm password, date of birth (using date input), and terms checkbox.<br>
+    Use CSS to create a two-column responsive layout, custom-styled checkboxes and radio buttons for gender selection. 
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/24.html"
+      width="100%"
+      height="650"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/24.html','code24', this)">
+    Show Code
+</button>
+<pre id="code24" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/24.css','code24css', this)">
+  Show CSS Code
+</button>
+<pre id="code24css" class="code-box"></pre>
+</section>
+
+
+<!--25-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Design a contact form for a website using HTML and CSS that includes fields for full name, email address, phone number, subject dropdown, message textarea, and submit button.<br>
+    Style the form with a modern CSS effect, labels for inputs, file upload for attachments.
+
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/25.html"
+      width="100%"
+      height="750"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/25.html','code25', this)">
+    Show Code
+</button>
+<pre id="code25" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/25.css','code25css', this)">
+  Show CSS Code
+</button>
+<pre id="code25css" class="code-box"></pre>
+</section>
+
+
+<!--42-->
+<section class="container my-5">
+
+  <div class="card shadow p-4">
+
+    <h2 class="text-center mb-4">
+      Image Caption Overlay
+    </h2>
+
+    <iframe
+      src="html/42.html"
+      width="100%"
+      height="600"
+      style="border:none;">
+    </iframe>
+
+  </div>
+<button class="code-btn mt-3"
+        onclick="loadCode('html/42.html','code42', this)">
+    Show Code
+</button>
+<pre id="code42" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/42.css','code42css', this)">
+  Show CSS Code
+</button>
+<pre id="code42css" class="code-box"></pre>
+</section>
+
+
+  <!--43-->
+<section class="container my-5">
+  <div class="alert alert-info">
+    <strong>Question:</strong><br>
+    Build a page with colorful divs (position: relative, z-index: 1-3) and a fixed header (position: fixed, z-index: 100). <br><br>
+    Verify header stays above all content divs when scrolling. <br><br>
+    Test by adding position: relative to a content div with z-index: 50—header should still appear on top.
+
+  </div>
+  <div class="card shadow p-4">
+
+    <iframe
+      src="html/43.html"
+      width="100%"
+      height="500"
+      style="border:none;">
+    </iframe>
+  </div>
+<button class="code-btn mt-3 mb-3"
+        onclick="loadCode('html/43.html','code43', this)">
+    Show Code
+</button>
+<pre id="code43" class="code-box"></pre>
+<button class="code-btn mt-3"
+        onclick="loadCode('css/43.css','code43css', this)">
+  Show CSS Code
+</button>
+<pre id="code43css" class="code-box"></pre>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

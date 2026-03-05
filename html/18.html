@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN </title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 90vh;
+			background-color:#f2f2f2;
+		}
+		.container{
+			border: solid black 1px;
+			border-radius: 10px;
+			width: 600px;height: 350px;
+			text-align: center;
+			background-color: white;
+			padding: 10px;
+		}
+		.container input { 
+			width: 45%;
+			text-align: center;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		button{
+			background-color: #4CAF50;
+			border-radius: 10px;
+			width: 45%;
+			height: 10%;
+		}
+		button:hover{
+			background-color: darkgreen;
+			cursor: pointer;
+		}
+		input[type="checkbox"]{
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<input type="text" placeholder="User Name:"><br><br>
+		<input type="text" placeholder="Password:"><br>
+		<input type="checkbox" name="box" id="box"style="width: 5%;">
+		<label for="box">Remember me</label><br>
+		<a href="../register.html">
+			<button>Login</button>
+		</a>
+	</div>
+</body>
+</html>

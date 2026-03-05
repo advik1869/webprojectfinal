@@ -1,0 +1,27 @@
+body
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	background:linear-gradient(135deg,#74ebd5,#acb6e5);
+}
+.container
+{
+	background:white;
+	padding:30px;
+	border-radius:10px;
+	width:300px;
+	box-shadow:5px 5px 5px;
+}
+input,select,button
+{
+	width:100%;
+	padding:8px;
+	margin-top:10px;
+}
+.error
+{
+	color:red;
+	font-size:14px;
+}

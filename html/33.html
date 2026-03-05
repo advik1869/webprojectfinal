@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VTOP Login</title>
+
+	<script src="../js/33.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="../css/33.css">
+</head>
+
+<body>
+
+<div class="container">
+
+	<h2>VTOP Login</h2>
+
+	<form onsubmit="return validateLogin()">
+
+		<input type="text" id="username" placeholder="Username">
+		<div id="userError" class="error"></div>
+
+		<input type="password" id="password" placeholder="Password">
+		<div id="passError" class="error"></div>
+
+		<select id="usertype">
+			<option value="">-- Select--</option>
+			<option value="student">Student</option>
+			<option value="faculty">Faculty</option>
+			<option value="alumni">Alumni</option>
+		</select>
+		<div id="typeError" class="error"></div>
+
+		<button type="submit">Login</button>
+	</form>
+</div>
+</body>
+</html>

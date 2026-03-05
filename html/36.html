@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Validation</title>
+
+<link rel="stylesheet" href="../css/36.css">
+<script src="../js/36.js" defer></script>
+</head>
+
+<body>
+
+<form onsubmit="return validateform()">
+
+<h2>Register</h2>
+
+<input type="text" id="name" placeholder="Username">
+<span class="error" id="ne"></span>
+
+<input type="email" id="email" placeholder="E-mail">
+<span class="error" id="ee"></span>
+
+<input type="password" id="pass" placeholder="Password">
+<span class="error" id="pe"></span>
+
+<span id="res"></span>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+table{
+   width: 45%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: solid black 1px;
+    background-color: #F5F0E6;
+    color: black;
+ }
+ th,td{
+    border: solid black 1px;
+    padding:10px ;
+    text-align: center;
+    word-wrap: break-word;
+ }
+ body{
+   background-color: #5D4037;
+   text-align: center;
+   color: white;
+ }
+ footer{
+   text-align: center;
+
+ }
+ td a:hover{
+   background-color:#5D4037;
+   color: white;
+ }
+

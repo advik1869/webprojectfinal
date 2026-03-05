@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout</title>
+	<link rel="stylesheet" type="text/css" href="../css/32.css">
+	<script src="../js/32.js"></script>
+</head>
+<body>
+	<div class="container">
+		<p>Checkout</p>
+		<input type="text" name="" placeholder="Full Name:">
+		<input type="tel" name="" id='phone' pattern="[0-9]{10}" placeholder="Phone Number:">
+		<input type="text" name="" class="address"placeholder="Delivery address:">
+		<input type="number" name="" id="zip" placeholder="ZIP/Postal code:">
+		Payment method:
+		<select id="Payment">
+			<option>---select---</option>
+			<option>Credit card</option>
+			<option>Debit card</option>
+			<option>Net banking</option>
+			<option>cash on delivery</option>
+			<option>UPI</option>
+		</select>
+		<div id='message'></div>
+		<button onclick="validate()">Submit</button>
+	</div>
+</body>
+</html>

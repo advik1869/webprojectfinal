@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(153deg,#f58d7f,#f57fd4);
+}
+
+/* CARD */
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(153deg,#b9375d,#b95937);
+    box-shadow: 8px 8px 18px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.container p{
+    font-size: 28px;
+    color: #ed9111;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.container input[type="text"],
+.container input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* LABELS */
+label{
+    color: #ed9111;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* GENDER + SUBJECTS */
+.gender,
+.subjects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* DECLARATION */
+.declare{
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* BUTTON */
+.container button{
+    width: 200px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container button:hover{
+    background: black;
+    color: white;
+}
+
+/* RESULT */
+#res{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}

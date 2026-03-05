@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			height: 100vh;
+			align-items: center;
+		}
+		.container{
+			width: 400px;
+			height: auto;
+			border: solid black 2px;
+		}
+		.container-header{
+			text-align: center;
+			background-color: #4CAF50;
+			color: white;
+			padding: 15px;
+			font-size: 25px;
+		}
+		.container-body{
+			text-align: center;
+			padding: 25px;
+			background-color: #F5F5F5;
+		}
+		.container-body input{
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		.gender{
+			display: flex;
+			margin-top: 10px;
+			gap: 15px;
+			justify-content: center;
+		}
+		.gender input[type="radio"]{
+			width: auto;
+			cursor: pointer;
+		}
+		button{
+			width: 100%;
+			padding: 5px;
+			background-color: #4CAF50;
+		}
+		button:hover{
+			 background-color: darkgreen;
+			 cursor: pointer;
+		}
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container-header">
+			Registration form
+		</div>
+		<div class="container-body">
+			<input type="text" name="" placeholder="Fullname:"><br>
+			<input type="text" name="" placeholder="E-mail:"><br>
+			<input type="text" name="" placeholder="Password:"><br>
+			<input type="text" name="" placeholder="Confirm Password:">
+			<div class="gender">
+				gender:
+				<input type="radio" name="">Male
+				<input type="radio" name="">Female
+			</div>
+			<button>Register</button>
+		</div>
+	</div>
+</body>
+</html>

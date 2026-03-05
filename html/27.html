@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name Greeting</title>
+
+<script>
+function myfunc()
+{
+    let x = document.getElementById('name').value.trim();
+
+    if(x === "")
+    {
+        document.getElementById('demo').innerHTML = "Enter your name first";
+        return;
+    }
+
+    document.getElementById('demo').innerHTML =
+        "Hello " + x + "Welcome!";
+}
+</script>
+
+<style>
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(135deg,#f07b73,#73f0e1);
+}
+
+.container{
+    width: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#73f0e1,#f07b73);
+    box-shadow: 8px 8px 18px rgba(0,0,0,0.4);
+}
+
+
+.container input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.container button{
+    padding: 7px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container button:hover{
+    background: black;
+    color: white;
+}
+
+
+#demo{
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <input type="text" id="name" placeholder="Enter Username">
+
+    <div id="demo"></div>
+
+    <button onclick="myfunc()">Submit</button>
+
+</div>
+
+</body>
+</html>

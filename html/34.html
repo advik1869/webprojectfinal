@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exam Registration Form</title>
+
+<link rel="stylesheet" href="../css/34.css">
+<script src="../js/34.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<p>Exam Registration Form</p>
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="email" id="email" placeholder="E-mail">
+
+<label>Gender:</label>
+
+<div class="gender">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+</div>
+
+<label>Subjects Interested:</label>
+
+<div class="subjects">
+<label><input type="checkbox" name="sub"> Math</label>
+<label><input type="checkbox" name="sub"> Physics</label>
+<label><input type="checkbox" name="sub"> Chemistry</label>
+<label><input type="checkbox" name="sub"> Biology</label>
+</div>
+
+<div class="declare">
+<label>
+<input type="checkbox" id="declaration">
+I agree to <a href="#">Terms & Conditions</a>
+</label>
+</div>
+
+<div id="res"></div>
+
+<button onclick="validate()">Register</button>
+
+</div>
+
+</body>
+</html>

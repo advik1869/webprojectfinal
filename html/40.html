@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiple Modal Popup</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/40.css">
+<script src="../js/40.js" defer></script>
+</head>
+
+<body>
+
+<h2>Multiple Card Pop Up</h2>
+
+<div class="container">
+    <button id="Loginbtn">Login</button>
+    <button id="Signupbtn">Sign Up</button>
+    <button id="Confirmbtn">Confirmation</button>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- LOGIN -->
+<div class="modal" id="login">
+    <h3>Login</h3>
+    <input placeholder="Username">
+    <input placeholder="Password">
+    <button>Submit</button>
+</div>
+
+<!-- SIGNUP -->
+<div class="modal" id="signup">
+    <h3>Signup</h3>
+    <input placeholder="Email">
+    <input placeholder="Password">
+    <button>Register</button>
+</div>
+
+<!-- CONFIRM -->
+<div class="modal" id="confirm">
+    <h3>Confirmation</h3>
+    <p>Account created successfully.</p>
+    <button>OK</button>
+</div>
+
+</body>
+</html>

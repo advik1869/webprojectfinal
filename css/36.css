@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(153deg,#f58d7f,#f57fd4);
+}
+
+/* FORM CARD */
+form{
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    background: linear-gradient(153deg,#8856c4,#3276ed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+form h2{
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+form input{
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* BUTTON */
+form button{
+    width: 150px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover{
+    background: black;
+    color: white;
+}
+
+/* ERRORS */
+.error{
+    color:red;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* RESULT */
+#res{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FOCUS EFFECT */
+input:focus{
+    background-color: #fff9c4;
+    border: 2px solid #f1c40f;
+    outline: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price Calculator</title>
+<style>
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(153deg,#9873f0,#5388e6);
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg,#ed74bb,#9457b3);
+    width: 320px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px ;
+}
+
+.container h2{
+    margin-bottom: 15px;
+    color: black;
+}
+
+.container input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.container button{
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.container button:hover{
+    background: black;
+    color: white;
+}
+
+#res{
+    color: #fff200;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+</style>
+
+<script>
+function calculateTotal() 
+{
+    let q = document.getElementById('qty').value;
+    let p = document.getElementById('price').value;
+
+    q = parseFloat(q);
+    p = parseFloat(p);
+
+    if (isNaN(q) || isNaN(p)) 
+    {
+        document.getElementById('res').innerHTML = "Enter valid numbers";
+        return;
+    }
+
+    let total = q * p;
+
+    document.getElementById('res').innerHTML = "Rs. " + total.toFixed(2);
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Price Calculator</h2>
+
+    <input type="number" id="qty" placeholder="Enter Quantity">
+    <input type="number" id="price" placeholder="Enter Price">
+
+    <div id="res"></div>
+
+    <button onclick="calculateTotal()">Calculate</button>
+</div>
+
+</body>
+</html>
