@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20260322e">
+</head>
+<body class="page-lab">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid px-lg-4">
+    <a class="navbar-brand" href="index.html">Web Project</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Tasks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="features.html">HTML &amp; CSS</a></li>
+            <li><a class="dropdown-item" href="interactive.html">JavaScript</a></li>
+            <li><a class="dropdown-item" href="ide.html">Code Lab</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<button id="topBtn" onclick="goTop()">↑</button>
+
+<main>
+  <section class="container py-4 py-lg-5">
+    <div class="hero-panel lab-hero">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <span class="hero-badge">Interactive Code Lab</span>
+          <h1 class="display-5 mt-3 mb-3">Edit code, run it instantly, and learn by experimenting.</h1>
+          <p class="mb-4">
+            This mini IDE lets learners change HTML, CSS, and JavaScript in one place and see the result live.
+            Try a starter challenge, break things, fix them, and understand how the output changes.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="row hero-stat-grid">
+            <div class="col-12">
+              <div class="hero-stat">
+                <strong>Safe live preview</strong>
+                <span>Code runs inside a sandboxed preview frame so learners can test ideas without affecting the main page.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hero-stat">
+                <strong>Starter tasks</strong>
+                <span>Choose a preset and begin with guided starter code.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hero-stat">
+                <strong>Instant feedback</strong>
+                <span>Change the code and rerun to see the result immediately.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-4">
+    <div class="page-banner lab-intro">
+      <span class="section-tag mb-3">Choose A Question</span>
+      <h1 class="mb-3">Load any question’s current code, then edit it and test changes live.</h1>
+      <p class="page-subtitle mb-4">Click a question number to load its existing files into the editors. Change the code, run the preview, and see how the output changes.</p>
+
+      <div class="lab-question-groups">
+        <div class="lab-question-group">
+          <h2 class="lab-group-title">HTML &amp; CSS Questions</h2>
+          <div class="lab-number-grid" id="htmlQuestionList"></div>
+        </div>
+
+        <div class="lab-question-group">
+          <h2 class="lab-group-title">JavaScript Questions</h2>
+          <div class="lab-number-grid" id="jsQuestionList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-5">
+    <div class="lab-shell">
+      <div class="row g-4">
+        <div class="col-xl-6">
+          <div class="lab-panel">
+            <div class="lab-panel-head">
+              <div>
+                <span class="section-tag">Challenge</span>
+                <h2 id="challengeTitle" class="lab-title mt-3 mb-2">Question 1</h2>
+                <p id="challengeDescription" class="lab-copy mb-0">The current HTML, CSS, and JavaScript for the selected question will load here for editing.</p>
+              </div>
+            </div>
+
+            <div class="lab-tabs" role="tablist" aria-label="Editor tabs">
+              <button type="button" class="lab-tab active" data-tab="html">HTML</button>
+              <button type="button" class="lab-tab" data-tab="css">CSS</button>
+              <button type="button" class="lab-tab" data-tab="js">JavaScript</button>
+            </div>
+
+            <div class="lab-editor-stack">
+              <label class="visually-hidden" for="htmlEditor">HTML editor</label>
+              <textarea id="htmlEditor" class="lab-editor active" spellcheck="false"></textarea>
+
+              <label class="visually-hidden" for="cssEditor">CSS editor</label>
+              <textarea id="cssEditor" class="lab-editor" spellcheck="false"></textarea>
+
+              <label class="visually-hidden" for="jsEditor">JavaScript editor</label>
+              <textarea id="jsEditor" class="lab-editor" spellcheck="false"></textarea>
+            </div>
+
+            <div class="lab-actions">
+              <button type="button" class="btn-brand" id="runBtnBottom">Run Preview</button>
+              <button type="button" class="btn btn-outline-soft" id="resetBtnBottom">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6">
+          <div class="lab-panel">
+            <div class="lab-preview-head">
+              <div>
+                <span class="section-tag">Live Output</span>
+                <h2 class="lab-title mt-3 mb-2">Preview</h2>
+                <p class="lab-copy mb-0">The preview uses the selected question’s code. Edit it in the left panel and rerun to compare changes instantly.</p>
+              </div>
+              <span class="lab-status" id="runStatus">Starter code loaded</span>
+            </div>
+
+            <iframe
+              id="previewFrame"
+              class="lab-preview"
+              title="Live code preview"
+              sandbox="allow-scripts">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-2">Use the Code Lab to edit your existing question files and learn by experimenting with real outputs.</p>
+    <small>Web Project | Interactive IDE Playground</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js?v=20260322a"></script>
+<script src="js/ide.js?v=20260322d"></script>
+
+</body>
+</html>

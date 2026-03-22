@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>JSS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?v=20260322e">
 </head>
-<button id="topBtn" onclick="goTop()">↑</button>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body class="page-library">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container-fluid">
 
     <!-- Brand -->
@@ -26,12 +28,13 @@
       <ul class="navbar-nav me-auto">
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">
             Tasks
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="features.html">HTML & CSS</a></li>
             <li><a class="dropdown-item" href="interactive.html">JavaScript</a></li>
+            <li><a class="dropdown-item" href="ide.html">Code Lab</a></li>
           </ul>
         </li>
 
@@ -50,6 +53,19 @@
     </div>
   </div>
 </nav>
+
+<button id="topBtn" onclick="goTop()">↑</button>
+
+<main>
+<section class="container py-4 py-lg-5">
+  <div class="page-banner">
+    <span class="section-tag mb-3">JavaScript Track</span>
+    <h1 class="mb-3">Learn interactivity by seeing behavior, output, and code together.</h1>
+    <p class="page-subtitle mb-0">
+      These exercises focus on DOM updates, events, validation, focus methods, and dynamic UI behavior so beginners can connect logic with what they see on the page.
+    </p>
+  </div>
+</section>
 <!--26-->
 <section class="container my-5">
   <div class="alert alert-info">
@@ -399,7 +415,7 @@
   <div class="card shadow p-4">
 
     <iframe
-      src="html/37.html"
+      src="html/37_preview.html?v=20260322b"
       width="100%"
       height="500"
       style="border:none;">
@@ -603,10 +619,16 @@
 <pre id="code44js" class="code-box"></pre>
 </section>
 
+</main>
 
-
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-2">Practice DOM manipulation, events, and validation with beginner-friendly JavaScript examples.</p>
+    <small>Web Project | JavaScript Learning Section</small>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20260322a"></script>
 </body>
 </html>

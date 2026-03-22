@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project</title>
-
-    <!-- Bootstrap -->
+    <title>Web Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Your CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20260322e">
 </head>
+<body class="page-home">
 
-<body>
-
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid px-lg-4">
     <a class="navbar-brand" href="index.html">Web Project</a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -24,96 +21,122 @@
     </button>
 
     <div class="collapse navbar-collapse" id="nav">
-
       <ul class="navbar-nav me-auto">
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            Tasks
-          </a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Tasks</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="features.html">HTML & CSS</a></li>
+            <li><a class="dropdown-item" href="features.html">HTML &amp; CSS</a></li>
             <li><a class="dropdown-item" href="interactive.html">JavaScript</a></li>
+            <li><a class="dropdown-item" href="ide.html">Code Lab</a></li>
           </ul>
         </li>
-
       </ul>
-
-     
 
       <ul class="navbar-nav ms-auto">
-
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
-
       </ul>
-
     </div>
   </div>
 </nav>
 
-
-<!-- ================= MAIN CONTENT ================= -->
 <main>
+  <section class="container py-4 py-lg-5">
+    <div class="hero-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="hero-badge">Learn by Building</span>
+          <h1 class="display-5 mt-3 mb-3">Practice HTML, CSS, and JavaScript with real examples.</h1>
+          <p class="mb-4">
+            This website is designed for beginners who want a simple way to learn web development.
+            Explore questions, view outputs, and inspect the actual code so every concept feels practical.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="features.html" class="btn-brand">Start HTML &amp; CSS</a>
+            <a href="interactive.html" class="btn-brand">Explore JavaScript</a>
+          </div>
+        </div>
 
-<div class="container text-center mt-5">
-
-  <h1>Web Programming</h1>
-  <p>This platform is designed for beginners who want to start their web development journey. Whether you’ve never written code before or want to strengthen your basics, you’ll find structured lessons, real examples and helps you to learn step-by-step.</p>
-
-</div>
-
-
-<div class="container mt-5">
-  <div class="row justify-content-center">
-
-    <!-- HTML CSS CARD -->
-    <div class="col-md-5">
-      <div class="card p-4 shadow text-center">
-        <h3>HTML & CSS</h3>
-        <p>Explore HTML and CSS examples</p>
-        <a href="features.html" class="btn btn-dark w-100">View</a>
+        <div class="col-lg-5">
+          <div class="row hero-stat-grid">
+            <div class="col-12">
+              <div class="hero-stat">
+                <strong>Step-by-step learning</strong>
+                <span>Questions, output previews, and code are shown together for faster understanding.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hero-stat">
+                <strong>HTML &amp; CSS</strong>
+                <span>Layout, forms, tables, images, styling, and responsive basics.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hero-stat">
+                <strong>JavaScript</strong>
+                <span>DOM updates, validation, events, focus control, and interactivity.</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- JS CARD -->
-    <div class="col-md-5">
-      <div class="card p-4 shadow text-center">
-        <h3>JavaScript</h3>
-        <p>Explore JS examples</p>
-        <a href="interactive.html" class="btn btn-dark w-100">View</a>
+  <section class="container pb-4">
+    <div class="row g-4 topic-grid">
+      <div class="col-lg-6">
+        <div class="card p-4 p-lg-5">
+          <span class="section-tag mb-3">Core Foundation</span>
+          <h3 class="mb-3">HTML &amp; CSS Tasks</h3>
+          <p class="mb-4">
+            Build confidence with page structure, forms, tables, layouts, galleries, and styling exercises.
+          </p>
+          <a href="features.html" class="btn-brand">Open HTML &amp; CSS</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card p-4 p-lg-5">
+          <span class="section-tag mb-3">Interactive Practice</span>
+          <h3 class="mb-3">JavaScript Tasks</h3>
+          <p class="mb-4">
+            Learn how user input, events, validation, and dynamic updates work through practical exercises.
+          </p>
+          <a href="interactive.html" class="btn-brand">Open JavaScript</a>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</div>
-
+  <section class="container pb-5">
+    <div class="card p-4 p-lg-5 lab-promo-card">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="section-tag mb-3">New Feature</span>
+          <h3 class="mb-3">Try the interactive Code Lab</h3>
+          <p class="mb-0">
+            Let learners edit starter HTML, CSS, and JavaScript, then run the preview instantly in a safe sandbox.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="ide.html" class="btn-brand">Open Code Lab</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-dark text-white py-4">
-
+<footer class="site-footer">
   <div class="container text-center">
-
-  <p class="mb-1">Web Programming Learning Portal
-    Designed to help beginners learn HTML, CSS & JavaScript through examples and tasks.
-  </p>
-
-    <hr class="bg-light">
-    <p class="mb-0">Developed by <strong>Advik K Nama</strong ></p>
-    <br>
-    <p class="mb-0">© 2026 Advik.k.Nama | Web Project</p>
-
+    <p class="mb-2">Web Programming Learning Portal for beginners who want to understand by doing.</p>
+    <small>Developed by Advik K Nama | © 2026 Web Project</small>
   </div>
-
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Your JS -->
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20260322a"></script>
 
 </body>
 </html>
